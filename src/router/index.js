@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import TestView from "../views/TestView.vue";
 import BasicView from "../views/BasicView.vue";
 import DeepView from "../views/DeepView.vue";
+import DeepView2 from "../views/DeepView2.vue";
 
 const routes = [
   {
@@ -33,6 +34,11 @@ const routes = [
     path: "/deep",
     name: "deep",
     component: DeepView,
+  },
+  {
+    path: "/deep2",
+    name: "deep2",
+    component: DeepView2,
   },
 ];
 
