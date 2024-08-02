@@ -93,6 +93,7 @@
   </div>
 </template>
 
+<!-- Vue2에서 사용하는 option api 방식 -->
 <script>
 export default {
   name: "TestView",

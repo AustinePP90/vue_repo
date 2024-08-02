@@ -4,6 +4,7 @@
     <router-link to="/about">About</router-link>
     <router-link to="/test">Test</router-link>
     <router-link to="/basic">3.컴포넌트(BASIC)</router-link>
+    <router-link to="/deep">8.컴포넌트(ADVANCED)</router-link>
   </nav>
   <router-view />
 </template>
