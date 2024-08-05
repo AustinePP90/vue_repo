@@ -1,6 +1,7 @@
 <template>
   <div class="son">
     <p>알콜 중독에 빠진 사고뭉치 아들</p>
+    {{ gpapaSmallest }}
     <GrandSon21 />
     <GrandSon22 :realColor="fontColor" />
   </div>
@@ -47,6 +48,7 @@ export default {
       // 컴포넌트의 데이터를 초기화합니다.
     };
   },
+  inject: ["gpapaSmallest"], // provide & inject
   watch: {
     // sample1() {
     //   console.log('');

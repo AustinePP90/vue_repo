@@ -3,6 +3,8 @@
     <p :style="realColor">
       책을 좋아해 벌써부터 시력이 안 좋아 잠자리 안경을 쓰는 손자
     </p>
+    {{ gpapaLen }}
+    {{ gpapaSmallest }}
   </div>
 </template>
 
@@ -43,6 +45,7 @@ export default {
       // 컴포넌트의 데이터를 초기화합니다.
     };
   },
+  inject: ["gpapaLen", "gpapaSmallest"], // provide & inject
   watch: {
     // sample1() {
     //   console.log('');

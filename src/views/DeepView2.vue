@@ -3,6 +3,8 @@
     <SonPage1 :fontColor="color" />
     <SonPage2 :fontColor="color" />
     <button @click="popColor">숨은 보스 등장 버튼</button>
+    <br />
+    {{ gpapaValues }}
   </div>
 </template>
 
@@ -41,6 +43,14 @@ export default {
   data() {
     return {
       color: "",
+      gpapaValues: [2, 3, 4, 5, 6],
+    };
+  },
+  provide() {
+    // provide & inject
+    return {
+      gpapaLen: this.gpapaValues.length,
+      gpapaSmallest: Math.min(...this.gpapaValues),
     };
   },
   watch: {
