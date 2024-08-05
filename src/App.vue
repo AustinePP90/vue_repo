@@ -11,6 +11,8 @@
     <router-link to="/calculator3">계산기3</router-link>
     <router-link to="/calculator4">계산기4(main)</router-link>
     <router-link to="/mixin">9.MIXIN</router-link>
+    <router-link to="/user">11.VUEX(basic)</router-link>
+    <router-link to="/member">11.VUEX(member)</router-link>
   </nav>
   <router-view />
 </template>
