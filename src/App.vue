@@ -6,6 +6,10 @@
     <router-link to="/basic">3.컴포넌트(BASIC)</router-link>
     <router-link to="/deep">8.컴포넌트(ADVANCED)</router-link>
     <router-link to="/deep2">8-2.컴포넌트(ADVANCED)</router-link>
+    <router-link to="/calculator1">계산기1</router-link>
+    <router-link to="/calculator2">계산기2</router-link>
+    <router-link to="/calculator3">계산기3</router-link>
+    <router-link to="/calculator4">계산기4</router-link>
   </nav>
   <router-view />
 </template>
