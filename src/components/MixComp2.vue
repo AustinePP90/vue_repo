@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h1>Component Two(2)</h1>
+    <h1>Component Two with Mixin(2)</h1>
     <p>{{ sharedData }}</p>
     <button @click="sharedMethod">모두의 METHOD</button>
   </div>

@@ -1,24 +1,24 @@
 <template>
   <div class="">
-    <h1>Component One with Mixin(1)</h1>
-    <p>{{ sharedData }}</p>
-    <button @click="sharedMethod">모두의 METHOD</button>
+    <h1>Component Three with Mixin(3)</h1>
+    <p>👍{{ sharedLike }}</p>
+    <button @click="sharedThumbsUp">좋아요를 부탁해요</button>
   </div>
 </template>
 
 <script>
 import { commonMixin } from "@/mixins/commonMixin";
 export default {
-  name: "MixComp1",
+  name: "MixComp3",
 
   mixins: [commonMixin],
 
   mounted() {
-    console.log("컴포넌트1 mounted");
+    console.log("컴포넌트3 mounted");
   },
 
   unmounted() {
-    console.log("컴포넌트1 unmounted");
+    console.log("컴포넌트3 unmounted");
   },
 };
 </script>

@@ -61,5 +61,7 @@ export default {
 </script>
 
 <style scoped>
-/* 스타일을 추가하세요 */
+li {
+  list-style: none;
+}
 </style>

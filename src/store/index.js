@@ -19,9 +19,9 @@ const store = createStore({
     setUser(state, data) {
       state.user = data;
     },
-    setMemberList(state, members) {
-      state.members = members;
-    },
+    // setMemberList(state, members) {
+    //   state.members = members;
+    // },
     addMember(state, member) {
       state.members.push(member);
     },
@@ -35,7 +35,7 @@ const store = createStore({
   plugins: [
     // 로컬 스토리지에 저장할 상태의 경로 설정
     persistedstate({
-      paths: ["user"],
+      paths: ["user", "members"],
     }),
   ],
 });
