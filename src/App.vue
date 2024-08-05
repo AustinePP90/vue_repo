@@ -9,7 +9,8 @@
     <router-link to="/calculator1">계산기1</router-link>
     <router-link to="/calculator2">계산기2</router-link>
     <router-link to="/calculator3">계산기3</router-link>
-    <router-link to="/calculator4">계산기4</router-link>
+    <router-link to="/calculator4">계산기4(main)</router-link>
+    <router-link to="/mixin">9.MIXIN</router-link>
   </nav>
   <router-view />
 </template>

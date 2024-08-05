@@ -6,6 +6,12 @@
     <input type="text" v-model="state.num2" />
     <span> = </span>
     <span>{{ state.result }}</span>
+    <br /><br /><br />
+    <input type="text" v-model="state.multiNum1" />
+    <span> * </span>
+    <input type="text" v-model="state.multiNum2" />
+    <span> = </span>
+    <span>{{ state.result2 }}</span>
   </div>
 </template>
 
@@ -20,6 +26,11 @@ export default {
       num1: 0, // 첫번째 텍스트박스와 바인딩될 숫자 상태
       num2: 0, // 두번째 텍스트박스와 바인딩될 숫자 상태
       result: computed(() => Number(state.num1) + Number(state.num2)), // 계산된 결과를 저장할 상태
+      multiNum1: 0,
+      multiNum2: 0,
+      result2: computed(
+        () => Number(state.multiNum1) * Number(state.multiNum2)
+      ),
     });
     return { state };
   },

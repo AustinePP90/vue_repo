@@ -4,6 +4,12 @@
     <input type="text" v-model="num1" @keyup="plusNumbers" /> <span> + </span>
     <input type="text" v-model="num2" @keyup="plusNumbers" /> <span> = </span>
     <span>{{ result }}</span>
+    <br /><br /><br />
+    <input type="text" v-model="multiNum1" @keyup="multiNumbers" />
+    <span> + </span>
+    <input type="text" v-model="multiNum2" @keyup="multiNumbers" />
+    <span> = </span>
+    <span>{{ result2 }}</span>
   </div>
 </template>
 
@@ -40,6 +46,9 @@ export default {
       num1: 0,
       num2: 0,
       result: 0,
+      multiNum1: 0,
+      multiNum2: 0,
+      result2: 0,
     };
   },
   watch: {
@@ -57,6 +66,9 @@ export default {
   methods: {
     plusNumbers() {
       this.result = Number(this.num1) + Number(this.num2);
+    },
+    multiNumbers() {
+      this.result2 = Number(this.multiNum1) * Number(this.multiNum2);
     },
   },
   setup() {

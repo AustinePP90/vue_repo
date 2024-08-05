@@ -8,6 +8,7 @@ import CalculatorView1 from "../views/CalculatorView1.vue";
 import CalculatorView2 from "../views/CalculatorView2.vue";
 import CalculatorView3 from "../views/CalculatorView3.vue";
 import CalculatorView4 from "../views/CalculatorView4.vue";
+import MixView from "../views/MixView.vue";
 
 const routes = [
   {
@@ -63,6 +64,11 @@ const routes = [
     path: "/calculator4",
     name: "calculator4",
     component: CalculatorView4,
+  },
+  {
+    path: "/mixin",
+    name: "mixin",
+    component: MixView,
   },
 ];
 
